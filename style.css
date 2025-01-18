@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(./resources/pexels-kai-pilger-1341279.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.sun {
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img{
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.earth {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: url(./resources/real-earth-world-map-s9s5vx1eupas9euj.jpg);
+    background-size: cover;
+    box-shadow: inset -13px 13px 15px black;
+    animation: earthOrbit 20s linear infinite;
+}
+
+.moon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: silver;
+    box-shadow: 0px 0px 10px white;
+    animation: moonOrbit 30s linear infinite;
+}
+
+.saturn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f0b000;
+    background-size: cover;
+    box-shadow: inset -30px 30px 50px black, 0 0 30px #f0b000;
+    animation: saturnOrbit 30s linear infinite;
+}
+
+.rings {
+    width: 150px;
+    height: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 50%;
+    box-shadow: -50px 10px 10px rgba(255, 255, 255, 0.331),50px 10px 10px rgba(255, 255, 255, 0.382);
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: ringsOrbit 15s linear infinite;
+}
+
+@keyframes earthOrbit {
+    0% {
+        transform: translate(-50%, -50%) translate(200px, 0) rotate(0deg);
+    }
+
+    12.5% {
+        transform: translate(-50%, -50%) translate(120px, 80px) rotate(45deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) translate(0, 130px) rotate(90deg);
+    }
+
+    37.5% {
+        transform: translate(-50%, -50%) translate(-120px, 80px) rotate(135deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translate(-200px, 0) rotate(180deg);
+    }
+
+    62.5% {
+        transform: translate(-50%, -50%) translate(-120px, -80px) rotate(225deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) translate(0, -130px) rotate(270deg);
+    }
+
+    87.5% {
+        transform: translate(-50%, -50%) translate(120px, -80px) rotate(315deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translate(200px, 0) rotate(360deg);
+    }
+}
+
+
+@keyframes moonOrbit {
+    0% {
+        transform: translate(-50%, -50%) translate(60px, 0) rotate(0deg);
+    }
+
+    12.5% {
+        transform: translate(-50%, -50%) translate(40px, 40px) rotate(30deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) translate(0, 70px) rotate(60deg);
+    }
+
+    37.5% {
+        transform: translate(-50%, -50%) translate(-40px, 40px) rotate(90deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translate(-60px, 0) rotate(120deg);
+    }
+
+    62.5% {
+        transform: translate(-50%, -50%) translate(-40px, -40px) rotate(150deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) translate(0, -70px) rotate(180deg);
+    }
+
+    87.5% {
+        transform: translate(-50%, -50%) translate(40px, -40px) rotate(210deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translate(60px, 0) rotate(240deg);
+    }
+
+}
+
+@keyframes saturnOrbit {
+    0% {
+        transform: translate(-50%, -50%) translate(350px, 0) rotate(0deg);
+    }
+
+    12.5% {
+        transform: translate(-50%, -50%) translate(180px, 150px) rotate(45deg);
+    }
+
+    25% {
+        transform: translate(-50%, -50%) translate(0, 200px) rotate(90deg);
+    }
+
+    37.5% {
+        transform: translate(-50%, -50%) translate(-180px, 150px) rotate(135deg);
+    }
+
+    50% {
+        transform: translate(-50%, -50%) translate(-350px, 0) rotate(180deg);
+    }
+
+    62.5% {
+        transform: translate(-50%, -50%) translate(-180px, -150px) rotate(225deg);
+    }
+
+    75% {
+        transform: translate(-50%, -50%) translate(0, -200px) rotate(270deg);
+    }
+
+    87.5% {
+        transform: translate(-50%, -50%) translate(180px, -150px) rotate(315deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) translate(350px, 0) rotate(360deg);
+        
+    }
+}
+
+/* @keyframes ringsOrbit {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+
+} */
+
